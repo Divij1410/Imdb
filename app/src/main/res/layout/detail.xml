@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#000000"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="200dp"
+        android:layout_height="130dp"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:scaleType="fitXY"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+
+    <TextView
+        android:id="@+id/detailoverview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageView2"
+        android:background="#FF6347"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="47dp"
+        android:text="TextView"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/detailtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="30dp"
+        android:textColor="#FFFFFF"
+        android:text="TextView"
+        android:background="#000000"
+        android:layout_below="@+id/detailoverview"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/detaillanguage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_alignBaseline="@+id/detailtitle"
+        android:layout_alignBottom="@+id/detailtitle"
+        android:layout_toRightOf="@+id/detailtitle"
+        android:textColor="#FFFFFF"
+        android:background="#000000"
+        android:layout_toEndOf="@+id/detailtitle"
+        android:layout_marginLeft="49dp"
+        android:layout_marginStart="49dp" />
+
+    <TextView
+        android:id="@+id/detailrating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/detailtitle"
+        android:layout_alignStart="@+id/detailtitle"
+        android:layout_below="@+id/detailtitle"
+        android:textColor="#FFFFFF"
+        android:background="#000000"
+        android:layout_marginTop="53dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/detailreleasedate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/detaillanguage"
+        android:layout_alignStart="@+id/detaillanguage"
+        android:background="#000000"
+        android:textColor="#FFFFFF"
+        android:text="TextView"
+        android:layout_alignTop="@+id/detailrating" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#FF6347"
+        android:layout_below="@+id/imageView2"
+        android:layout_toEndOf="@+id/detailtitle"
+        android:text="TextView"
+        android:textSize="28sp" />
+
+
+    <com.google.android.youtube.player.YouTubePlayerView
+        android:id="@+id/youtubeplayer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp">
+
+    </com.google.android.youtube.player.YouTubePlayerView>
+
+
+        <RadioButton android:id="@+id/t1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:background="#000000"
+            android:textColor="#FFFFFF"
+            android:text="TRAILER"
+            android:layout_marginTop="350dp"/>
+        <RadioButton android:id="@+id/t2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:background="#000000"
+            android:text="CLIP"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="350dp"
+            android:layout_toRightOf="@+id/t1"/>
+
+
+
+
+</RelativeLayout>
